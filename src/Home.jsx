@@ -1,4 +1,7 @@
 import React from 'react'
+import {Map} from './Map';
+
+
 
 export const Home = () => {
     return (
@@ -8,6 +11,12 @@ export const Home = () => {
 
             <label htmlFor="password">Password:</label>
             <input id="password" type="password" name="password" size="28"/>
-        </form>
+
+            <button onClick={() => {
+                this.navigateTo(<Map/>)
+              }}>
+                Submit
+              </button>
+        </form>        
     )
 }

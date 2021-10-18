@@ -2,11 +2,13 @@ import './App.css';
 import {Home} from './Home';
 import {About} from './About';
 import {Profile} from './Profile';
+//import {Registration} from './Registration';
 import React from 'react';
 
 const PAGES = {
   home: <Home/>,
   about: <About/>,
+  //registration: <Registration/>,
   profile: <Profile/>
 }
 
@@ -25,7 +27,7 @@ class App extends React.Component {
               <button onClick={() => {
                 this.navigateTo("home")
               }}>
-                Home
+                Login
               </button>
             </li>
             <li>
@@ -41,6 +43,15 @@ class App extends React.Component {
               }}>
                 Profile
               </button>
+              
+            </li>
+            <li>
+              <button onClick={() => {
+                this.navigateTo("registration")
+              }}>
+                Registration
+              </button>
+              
             </li>
           </ul>
         </nav>  
