@@ -11,7 +11,7 @@ export class Home extends Component {
   authenticate = (event) => {
     event.preventDefault();
     const { email, password } = event.target;
-    this.props.logIn(email, password);
+    this.props.logIn(email.value, password.value);
   };
 
   render() {
