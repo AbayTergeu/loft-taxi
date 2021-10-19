@@ -5,7 +5,7 @@ const PAGES = {
   map: <Map/>
 }
 
-class Registration extends React.Component {
+export class Registration extends React.Component {
   state = {currentPage: "map"};
   navigateTo = (page) => {
     this.setState({currentPage: page})
