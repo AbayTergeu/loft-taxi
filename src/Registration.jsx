@@ -33,4 +33,5 @@ class Registration extends React.Component {
   }
 }
 
-export default Registration;
+const reg = new Registration();
+export default reg;
