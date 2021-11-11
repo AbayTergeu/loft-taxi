@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from "redux";
-import rootReducer from './redusers';
+import rootReducer from "./reducers";
 import createSagaMiddleware from "redux-saga";
 import { authSaga } from "./authSaga";
 
